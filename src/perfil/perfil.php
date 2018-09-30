@@ -9,8 +9,41 @@ $id=$_SESSION['usuario'];
    <tr align="center"   height="80px">
     <td colspan="2"><img width="100px" src="https://www.bsn.eu/wp-content/uploads/2016/12/user-icon-image-placeholder.jpg"
     	> </td>
-    <td rowspan="4" width="80%"><img width="600px" src="res/Historico.PNG" align="center" 
-    	></td>
+    <td rowspan="4" width="80%">
+      <table>
+        <tr>
+          <th>No. Viaje</th>
+          <th>Ruta</th>
+          <th>ECO</th>
+          <th>Fecha</th>
+          <th></th>
+        </tr>
+      <?php
+      $query = "SELECT idviaje,ruta,eco,fecha_de_realizacion from viaje join unidad_has_conductor on unidad_has_conductor.unidad_idunidad = viaje.unidad_has_conductor_unidad_idunidad join unidad on unidad.idunidad=unidad_has_conductor.unidad_idunidad join pasajero on pasajero.tarjeta_idtarjeta = viaje.tarjeta_idtarjeta where pasajero.usuario='".$id."'";
+
+      $result = mysqli_query($enlaceInicial,$query);
+
+      while($row=mysqli_fetch_array($result)){
+        echo "<tr>";
+        echo "<td>";
+        echo $row['idviaje'];
+        echo "</td>";
+        echo "<td>";
+        echo $row['ruta'];
+        echo "</td>";
+        echo "<td>";
+        echo $row['eco'];
+        echo "</td>";
+        echo "<td>";
+        echo $row['fecha_de_realizacion'];
+        echo "</td>";
+        echo "</tr>";
+      }
+      ?>
+
+      </table>
+      <!--<img width="600px" src="res/Historico.PNG" align="center" 
+    	>--></td>
   </tr>
   <tr align="center" height="100px">
     <td colspan="2"><h1>		
