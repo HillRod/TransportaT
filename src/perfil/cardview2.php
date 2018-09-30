@@ -13,7 +13,7 @@
  
   //Paso 3: Cadena de Alta de tipo de pagos
 
-$Query="SELECT * FROM `PASAJERO` WHERE usuario=".$id;
+$Query="SELECT * FROM `PASAJERO` WHERE usuario='".$id."'";
   $Reciente= mysqli_query($Link,$Query);
 //Obtener todos los registros de la tabla
 while ($Opc= mysqli_fetch_array($Reciente, MYSQLI_BOTH))
@@ -30,7 +30,7 @@ echo $Opc['usuario'];
       <?php 
       
 //Obtener todos los registros de la tabla
-$Query="SELECT * FROM `PASAJERO` WHERE usuario=".$id;
+$Query="SELECT * FROM `PASAJERO` WHERE usuario='".$id."'";
   $Reciente1= mysqli_query($Link,$Query);
 while ($Opc1= mysqli_fetch_array($Reciente1, MYSQLI_BOTH))
 {
@@ -40,7 +40,7 @@ echo $Opc1['tarjeta_idtarjeta'];
 ?></h1>
     <h1>Tipo de Tarjeta:</h1>
     <h1 class="center"> <?php
-      $Query="SELECT * FROM `PASAJERO` WHERE usuario=".$id;
+      $Query="SELECT * FROM `PASAJERO` WHERE usuario='".$id."'";
   $Reciente= mysqli_query($Link,$Query);
 //Obtener todos los registros de la tabla
 while ($Opc= mysqli_fetch_array($Reciente, MYSQLI_BOTH))
@@ -58,7 +58,7 @@ if($Opc['pasajero_tipo_idpasajero_tipo']==1)
 </h1>
 <h1>Saldo:</h1>
     <h1 class="center"> <?php
-      $Query="SELECT * FROM `PASAJERO` WHERE usuario=".$id;
+      $Query="SELECT * FROM `PASAJERO` WHERE usuario='".$id."'";
   $Reciente= mysqli_query($Link,$Query);
 //Obtener todos los registros de la tabla
 while ($Opc= mysqli_fetch_array($Reciente, MYSQLI_BOTH))
@@ -75,7 +75,7 @@ echo $Opc['saldo'];
     <li><i class="fa fa-ban fa-2x"  title="Reportar Tarjeta" ></i></li>
     <li><i class="fa fa-check-square fa-2x" title=
       <?php
-      $Query="SELECT `activa` FROM `tarjeta` JOIN `pasajero` WHERE idtarjeta=tarjeta_idtarjeta and usuario".$id;
+      $Query="SELECT `activa` FROM `tarjeta` JOIN `pasajero` WHERE idtarjeta=tarjeta_idtarjeta and usuario='".$id."'";
   $Reciente2= mysqli_query($Link,$Query);
 //Obtener todos los registros de la tabla
 while ($Opc2= mysqli_fetch_array($Reciente2, MYSQLI_BOTH))

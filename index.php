@@ -16,6 +16,7 @@
         <link rel="stylesheet" type="text/css" href="css/qs.css">
 	 <link rel="stylesheet" type="text/css" href="css/registro.css">
 	    <link rel="stylesheet" type="text/css" href="css/encargado.css">
+        <link rel="stylesheet" type="text/css" href="css/card.css">
     	<?php
 
     require_once 'src/'.$pagina.'/' . $pagina . '.php';
@@ -24,8 +25,4 @@
     
     </div>
     
-    <?php
-    
-      require_once 'src/footer/footer.php';
-
-      ?>
+   

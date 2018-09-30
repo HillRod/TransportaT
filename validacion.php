@@ -8,10 +8,10 @@
 	if($row['pass'] == $pass){
 		session_start();
 	$_SESSION['usuario'] = $user;
-	header("Location: index.php");
+	header("Location: index.php?link=perfil");
 	}else{
 		echo "Contraseña Incorrecta";
-	header("Location: index.php".$user." ".$pass." ");
+	header("Location: index.php");
 	exit();	
 	}
 	}else{
