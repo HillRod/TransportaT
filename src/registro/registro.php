@@ -1,7 +1,7 @@
 <body>
 	
 
-  <section calss="formulario">
+  <div calss="formsq">
   
 	<form class= "formsq" id="registro" action=" ">
        
@@ -16,7 +16,7 @@
     	<input type="submit" class="submit" id="registrar" name="registrar" value="Registrar">
    
 </form>	
- </section>
+ </div>
 
 
 
