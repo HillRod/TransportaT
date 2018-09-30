@@ -33,9 +33,29 @@
                             }
                             ?>
             </a></td>
-                <td> <a href="?link=queja">Quejas</a> </td>
-                <td><a href="?link=sugerencia">Sugerencia</a></td>
-                <td><a href="?link=registro">Registro</a></td>
+                <td> <a href="?link=queja"><?php
+                            if (!isset($_SESSION['usuario'])) {
+                                echo "Queja";
+                            }
+                            
+                            ?></a> </td>
+                <td><a href="?link=sugerencia">
+                    <?php
+                            if (!isset($_SESSION['usuario'])) {
+                                echo "Suegerencia";
+                            }
+                            
+                            ?>
+                </a></td>
+                <td><a href="?link=registro">
+                    <?php
+                            if (!isset($_SESSION['usuario'])) {
+                                echo "Registro";
+                            }
+                            
+                            ?>
+                </a></td>
+                
             </table>
         </div>
 </body>

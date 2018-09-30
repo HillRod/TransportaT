@@ -10,7 +10,7 @@ $id=$_SESSION['usuario'];
     <td colspan="2"><img width="100px" src="https://www.bsn.eu/wp-content/uploads/2016/12/user-icon-image-placeholder.jpg"
     	> </td>
     <td rowspan="4" width="80%">
-      <table>
+      <table border="">
         <tr>
           <th>No. Viaje</th>
           <th>Ruta</th>
@@ -37,7 +37,11 @@ $id=$_SESSION['usuario'];
         echo "<td>";
         echo $row['fecha_de_realizacion'];
         echo "</td>";
+        echo "<td>";
+        echo "<a href='index.php?link=queja'>Reportar</a>";
+        echo "</td>";
         echo "</tr>";
+
       }
       ?>
 
