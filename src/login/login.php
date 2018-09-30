@@ -2,7 +2,7 @@
   if (!isset($_SESSION['usuario'])) {
 
   }
-  else{header("Location: index.php");}
+  else{header("Location: index.php?link=perfil");}
 ?>
 <!DOCTYPE html>
 <html>
