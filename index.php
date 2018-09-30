@@ -1,6 +1,6 @@
 <?php
 	include("conf/conexion.php");
-    $pagina = isset($_GET['link']) ? strtolower($_GET['link']) : 'main';
+    $pagina = isset($_GET['link']) ? strtolower($_GET['link']) : 'login';
     // El fragmento de html que contiene la cabecera de nuestra web
     require_once 'src/header/header.php';
 
