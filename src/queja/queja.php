@@ -1,10 +1,22 @@
 <body>
-	<form class="formqs">	
-	<h2 class="h2">Pubicar Queja</h2>
-	<input type="text" name="tituloQueja" class="campo" placeholder="Titulo" size="80">
+<body>
+<script src="jquery.js" type="text/javascript"></script> <!--Libreria-->
+  <link rel="stylesheet" type="text/css" href="css/sugerencia.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"><div class="card">
+      
+  <div class="space"></div>
+    <div class="author">
+     <h2> 
+      Quejas
+    </h2>
+  </div>
+    <div class="separator"></div>
+    <h1>Asunto:</h1>
+    <input type="text" name="tituloQueja" class="campo" placeholder="Titulo" size="80">
+    <h1>Descripción:</h1>
 	<textarea class="campo" placeholder="Descripción" cols="80" rows="6"></textarea>
-	<br><br>
-	<input type="submit" name="" class="enviar">
-	
-	</form>
+     <div class="fab"><a href="#"><i class="fa fa-check fa-3x" ></i> </a></div>
+</div>
+
+</body>
 </body> 
