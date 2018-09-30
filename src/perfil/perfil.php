@@ -35,7 +35,7 @@ echo $Opc['usuario'];
 					<tr align="center" height="150px">
 						
     <td> <i class="fa fa-edit fa-3x"  title="Editar Perfil" ></i></td>
-    <td ><a href="conf/cerrar.php"><i class="fa fa-sign-out fa-3x"  title="Cerrar Sesion" ></i></a></td>
+    <td ><a href="?link=out"><i class="fa fa-sign-out fa-3x"  title="Cerrar Sesion" ></i></a></td>
 
 
 					</tr>
